@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:scaleType="fitCenter"
+
+        android:src="@drawable/quadblogo"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_toEndOf="@id/thumbnail"
+        android:layout_marginStart="8dp"
+        android:textStyle="bold"
+        android:text="Title"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/summary"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_toEndOf="@id/thumbnail"
+        android:layout_marginStart="8dp"
+        android:layout_below="@id/title"
+        android:text="Today, Quadbtech has grown into a full-fledged Creative agency with versatile services. We have developed and worked with various different platforms and languages. Our expertise in these diverse developing platforms has helped us create many websites and services for multiple industries."
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:autoSizeTextType="uniform"
+        android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
